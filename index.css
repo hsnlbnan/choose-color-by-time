@@ -1,0 +1,94 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color-scheme: var(--color-scheme);
+  color: var(--color);
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 5rem;
+  align-items: center;
+  transition: background-color 1s ease-in-out;
+  color: white;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+
+.picked-color {
+  width: 50px;
+  height: 50px;
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toast {
+  color: #000;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  font-size: 0.9rem;
+  padding: 0.6rem 2rem;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s right ease-in-out;
+  max-width: fit-content;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
