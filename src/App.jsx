@@ -62,8 +62,8 @@ function App() {
         backgroundColor: `#${date}`,
       }}
     >
-      Color Chooser
-      <h3>{date}</h3>
+      <h6> Color Chooser</h6>
+      <h3>#{date}</h3>
       <p className="description">
         Güncel Zaman :{" "}
         {new Date().toLocaleTimeString("tr-TR", {
